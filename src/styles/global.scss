@@ -1,0 +1,141 @@
+@import "variables";
+
+html,
+body {
+  background-color: $secondary;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  ::selection {
+    color: $primary;
+    background: $secondary;
+  }
+}
+
+header {
+  margin-bottom: 3em;
+  text-align: center;
+  padding: 2em;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: $offWhite;
+  margin: 0;
+}
+
+.card {
+  .card-image {
+    aspect-ratio: auto 3 / 2;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+  }
+
+  .card-header {
+    background-color: $offWhite;
+    position: relative;
+    bottom: 2.5em;
+    width: 65%;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0 auto;
+    margin-bottom: 3em;
+
+    .card-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .card-title {
+        font-size: 1em;
+        font-weight: 900;
+        color: $secondary;
+        margin-bottom: 0.5em;
+      }
+
+      .card-price {
+        font-weight: 500;
+        font-size: 2rem;
+        color: $secondary;
+        margin-bottom: 0.5em;
+
+        span {
+          font-size: 0.5em;
+          vertical-align: text-top;
+          position: relative;
+          top: 0.25em;
+        }
+      }
+    }
+
+    .card-button {
+      background-color: $primary;
+      color: $secondary;
+      font-weight: 900;
+      border: none;
+      border-radius: 0.75em;
+      width: 100%;
+      padding: 0.75em;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primaryLighter;
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 0.7rem;
+  padding: 1.3em;
+
+  p {
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+    padding: 0 0.5em;
+  }
+
+  .card {
+    .card-image {
+      border-radius: 0.5em;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+    padding: 0;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+  }
+}

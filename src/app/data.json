@@ -1,0 +1,37 @@
+[
+  {
+    "name": "RANARP",
+    "price": 39,
+    "imageUrl": "/lamp1.jpg"
+  },
+  {
+    "name": "SAXHYTTAN",
+    "price": 12,
+    "imageUrl": "/lamp2.jpg"
+  },
+  {
+    "name": "SOLKLINT",
+    "price": 17,
+    "imageUrl": "/lamp3.jpg"
+  },
+  {
+    "name": "FADO",
+    "price": 17,
+    "imageUrl": "/lamp4.jpg"
+  },
+  {
+    "name": "VINDKAST",
+    "price": 17,
+    "imageUrl": "/lamp5.jpg"
+  },
+  {
+    "name": "TOKABO",
+    "price": 8,
+    "imageUrl": ""
+  },
+  {
+    "name": "",
+    "price": 8,
+    "imageUrl": ""
+  }
+]
