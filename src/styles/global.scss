@@ -9,11 +9,13 @@ body,
   margin: 0;
   box-sizing: border-box;
 
+  // User selection custom colors
   ::selection {
     color: $primary;
     background: $secondary;
   }
 
+  // Custom scrollbar
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -155,12 +157,6 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 0.5em;
     padding: 0 0.5em;
-  }
-
-  .card {
-    .card-image {
-      border-radius: 0.5em;
-    }
   }
 }
 

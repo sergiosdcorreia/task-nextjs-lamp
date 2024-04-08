@@ -1,0 +1,59 @@
+.card {
+  .card-image {
+    aspect-ratio: auto 3 / 2;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+  }
+
+  .card-header {
+    background-color: $offWhite;
+    position: relative;
+    bottom: 2.5em;
+    width: 65%;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0 auto;
+    margin-bottom: 3em;
+
+    .card-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .card-title {
+        font-size: 1em;
+        font-weight: 900;
+        color: $secondary;
+        margin-bottom: 0.5em;
+      }
+
+      .card-price {
+        font-weight: 500;
+        font-size: 2rem;
+        color: $secondary;
+        margin-bottom: 0.5em;
+
+        span {
+          font-size: 0.5em;
+          vertical-align: text-top;
+          position: relative;
+          top: 0.25em;
+        }
+      }
+    }
+
+    .card-button {
+      @extend .primary-button;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    .card-image {
+      border-radius: 0.5em;
+    }
+  }
+}
