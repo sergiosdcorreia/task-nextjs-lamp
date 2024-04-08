@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import NoImage from "../../../public/no-image.jpg";
+import NoImage from "../../../public/no-image.svg";
 import { onAdd } from "@/lib/action/cart";
 
 const ProductCard = ({ product }) => {

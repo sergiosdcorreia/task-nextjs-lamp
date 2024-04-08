@@ -25,13 +25,13 @@
     "imageUrl": "/lamp5.jpg"
   },
   {
-    "name": "TOKABO",
-    "price": 8,
-    "imageUrl": ""
+    "name": "MARKFROST",
+    "price": 15,
+    "imageUrl": "/lamp6.jpg"
   },
   {
-    "name": "",
+    "name": "TOKABO",
     "price": 8,
-    "imageUrl": ""
+    "imageUrl": null
   }
 ]
